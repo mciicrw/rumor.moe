@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Have you heard?</title>
+    <title>rumor.moe | have you heard?</title>
+    <link rel="stylesheet" href="/media/styles.css">
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -12,9 +14,74 @@
     <meta name="theme-color" content="#1a0001">
 </head>
 <body>
-    <h1>Magia Record EN</h1>
-    <h2>Event Schedules</h2>
+    <h1 class="heading">Magia Record EN</h1>
+    <h2 class="subheading">Event Schedules</h2>
 
-    
+    <div id="content" class="event-container"></div>
+
+<script src="/media/countdown.js"></script>
+<script>
+const events = [
+    {
+        name: "August Shop",
+        start: "01 Aug 2019 00:00:00 PDT",
+        end: "31 Aug 2019 23:59:59 PDT",
+    },
+    {
+        name: "Iroha's Birthday Party! Shop & Set",
+        start: "22 Aug 2019 05:00:00 PDT",
+        end: "02 Sep 2019 02:59:59 PDT",
+    },
+    {
+        name: "Sayaka Miki Fate Weave",
+        start: "22 Aug 2019 05:00:00 PDT",
+        end: "05 Sep 2019 02:59:59 PDT",
+    },
+    {
+        name: "Mirrors Ranking",
+        start: "29 Aug 2019 05:00:00 PDT",
+        end: "04 Sep 2019 23:59:59 PDT",
+        sections: [
+            {
+                name: "Preliminaries",
+                start: "29 Aug 2019 05:00:00 PDT",
+                end: "03 Sep 2019 01:59:59 PDT",
+            },
+            {
+                name: "Finals",
+                start: "03 Sep 2019 03:00:00 PDT",
+                end: "04 Sep 2019 22:59:59 PDT",
+            },
+            {
+                name: "Half AP",
+                start: "29 Aug 2019 05:00:00 PDT",
+                end: "04 Sep 2019 23:59:59 PDT",
+            }
+        ]
+    },
+    {
+        name: "Sayaka Miki Login Bonus",
+        start: "30 Aug 2019 00:00:00 PDT",
+        end: "08 Sep 2019 23:59:59 PDT",
+    },
+    {
+        name: "Maintenance",
+        start: "05 Sep 2019 03:00:00 PDT",
+        end: "05 Sep 2019 05:00:00 PDT",
+    },
+    {
+        name: "Mitama's Special Training - Yachiyo Nanami",
+        start: "05 Sep 2019 05:00:00 PDT",
+        end: "11 Sep 2019 02:59:59 PDT",
+    },
+    {
+        name: "Kirika Kure Fate Weave",
+        start: "05 Sep 2019 05:00:00 PDT",
+        end: "11 Sep 2019 02:59:59 PDT",
+    },
+];
+
+initCountdown(events, document.getElementById('content'));
+</script>
 </body>
 </html>
