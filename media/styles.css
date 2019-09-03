@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-row-gap: 1em;
 }
 
-.hidden,
+time.hidden,
 time:not(.hidden) + time {
     display: none;
     padding: 0 !important;
