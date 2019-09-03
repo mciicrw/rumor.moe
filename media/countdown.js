@@ -33,6 +33,9 @@ function eventToElement(event) {
     });
 
     container.appendChild(subcontainer);
+
+    let rowspan = Math.floor(1 + (0.75 * event.sections.length));
+    container.style.gridRow = `span ${rowspan}`;
   }
 
   return container;
