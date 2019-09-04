@@ -86,6 +86,20 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2px .7em;
 }
 
+.event.event-unstarted > h3 {
+    background: #BEE3F8;
+    color: #2C5282;
+}
+
+.event.event-ended > h3 {
+    background: #EDF2F7;
+    color: #4A5568;
+}
+
+.event.event-ended > time {
+    color: #4A5568;
+}
+
 .event-section-container {
     margin: 0 1em 1em;
 

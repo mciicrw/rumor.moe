@@ -51,11 +51,13 @@ function countdown() {
 
     if (now.getTime() > time.getTime() && type === 'start') {
       element.className = 'hidden';
+      element.parentElement.classList.remove('event-unstarted');
       return;
     }
 
     if (now.getTime() > time.getTime() && type === 'end') {
-      element.textContent = 'Event has ended.'
+      element.textContent = 'Event has ended.';
+      element.parentElement.classList.add('event-ended');
       return;
     }
 
@@ -75,6 +77,7 @@ function countdown() {
 
     if (type === 'start') {
       element.textContent = `Starts in ${timeString}`;
+      element.parentElement.classList.add('event-unstarted');
     } else if (type === 'end') {
       element.textContent = `Ends in ${timeString}`;
     }
