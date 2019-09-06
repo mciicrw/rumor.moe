@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     align-items: start;
+    padding-bottom: 2em;
 }
 
 @media (min-width: 500px) {
