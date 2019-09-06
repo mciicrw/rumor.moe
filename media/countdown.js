@@ -45,18 +45,24 @@ function countdown() {
   let elements = document.querySelectorAll('time');
   
   elements.forEach(element => {
+    if (element.classList.contains('no-refresh')) {
+      return;
+    }
+
     let time = new Date(element.getAttribute('datetime'));
     let type = element.getAttribute('data-type');
     let now = new Date();
 
     if (now.getTime() > time.getTime() && type === 'start') {
-      element.className = 'hidden';
+      element.textContent = '';
+      element.className = 'hidden no-refresh';
       element.parentElement.classList.remove('event-unstarted');
       return;
     }
 
     if (now.getTime() > time.getTime() && type === 'end') {
       element.textContent = 'Event has ended.';
+      element.classList.add('no-refresh');
       element.parentElement.classList.add('event-ended');
       return;
     }
