@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .event .event time {
-    padding: 2px .7em;
+    padding: 2px .7em 0;
 }
 
 .event.event-unstarted > h3 {
