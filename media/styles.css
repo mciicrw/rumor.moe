@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 .event h3 {
     background: #E9D8FD;
     color: #553C9A;
-    padding: 2px 1em;
+    padding: 2px 1em 0;
     margin-bottom: .2em;
 }
 
