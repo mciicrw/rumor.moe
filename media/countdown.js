@@ -1,3 +1,8 @@
+let globalOffset = 0;
+const ONE_DAY    = 24 * 60 * 60;
+const ONE_HOUR   = 60 * 60;
+const ONE_MINUTE = 60;
+
 function el(type = 'div', className = '') {
   let element = document.createElement(type);
   if (className !== '') {
@@ -53,32 +58,35 @@ function countdown() {
     let type = element.getAttribute('data-type');
     let now = new Date();
 
-    if (now.getTime() > time.getTime() && type === 'start') {
+    if (now.getTime() - globalOffset > time.getTime() && type === 'start') {
       element.textContent = '';
       element.className = 'hidden no-refresh';
       element.parentElement.classList.remove('event-unstarted');
       return;
     }
 
-    if (now.getTime() > time.getTime() && type === 'end') {
+    if (now.getTime() - globalOffset > time.getTime() && type === 'end') {
       element.textContent = 'Event has ended.';
       element.classList.add('no-refresh');
+      element.parentElement.classList.remove('event-ends-soon');
       element.parentElement.classList.add('event-ended');
       return;
     }
 
     let timeString = '';
 
-    let duration = (time.getTime() - now.getTime()) / 1000;
-    let days = Math.floor(duration / (60 * 60 * 24));
+    let duration = (time.getTime() - (now.getTime() - globalOffset)) / 1000;
+    let days = Math.floor(duration / (ONE_DAY));
     if (days > 0) {
       timeString += `${days}d`;
+    } else {
+      element.parentElement.classList.add('event-ends-soon');
     }
-    let hours = Math.floor(duration % (60 * 60 * 24) / (60 * 60));
+    let hours = Math.floor(duration % (ONE_DAY) / (ONE_HOUR));
     timeString += ` ${hours}h`;
-    let minutes = Math.floor(duration % (60 * 60) / (60));
+    let minutes = Math.floor(duration % (ONE_HOUR) / (ONE_MINUTE));
     timeString += ` ${minutes}m`;
-    let seconds = Math.floor(duration % 60);
+    let seconds = Math.floor(duration % ONE_MINUTE);
     timeString += ` ${seconds}s`;
 
     if (type === 'start') {
