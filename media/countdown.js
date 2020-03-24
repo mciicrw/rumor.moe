@@ -79,7 +79,7 @@ function countdown() {
     let days = Math.floor(duration / (ONE_DAY));
     if (days > 0) {
       timeString += `${days}d`;
-    } else {
+    } else if (type === 'end') {
       element.parentElement.classList.add('event-ends-soon');
     }
     let hours = Math.floor(duration % (ONE_DAY) / (ONE_HOUR));
