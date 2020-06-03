@@ -20,13 +20,13 @@
 
 		let itemType = 'upcoming';
 
-		if ($time >= startDate) {
+		if ($time > startDate) {
 			itemType = 'ongoing';
 		}
 
 		if (
 			item.end !== null &&
-			$time >= endDate
+			$time > endDate
 		) {
 			itemType = 'ended';
 		}
