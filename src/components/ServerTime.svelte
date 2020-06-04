@@ -1,5 +1,5 @@
 <script>
-	import { time } from './stores.js';
+	import { time } from '../helpers/stores.js';
 	import { zonedTimeToUtc, utcToZonedTime, format } from 'date-fns-tz';
 
 	const timeZone = 'America/Los_Angeles';

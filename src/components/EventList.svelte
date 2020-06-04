@@ -1,8 +1,9 @@
 <script>
-	import { data, time } from './stores.js';
 	import Event from './Event.svelte';
 	import { flip } from 'svelte/animate';
-	import { transition } from './transition.js';
+	import { transition } from '../helpers/transition.js';
+	import { data, time } from '../helpers/stores.js';
+	import { whereTypeMatches, byEarlierDate } from '../helpers/utility.js';
 
 	const [send, recieve] = transition;
 	const typeNames = {
@@ -14,45 +15,24 @@
 	/** @type {('ongoing'|'upcoming'|'ended')} */
 	export let type;
 	
-	$: filteredData = $data.filter(item => {
-		const startDate = new Date(item.start);
-		const endDate = new Date(item.end);
-
-		let itemType = 'upcoming';
-
-		if ($time > startDate) {
-			itemType = 'ongoing';
-		}
-
-		if (
-			item.end !== null &&
-			$time > endDate
-		) {
-			itemType = 'ended';
-		}
-
-		return itemType === type;
-	})
-	.sort((a, b) => {
-		if (type === 'upcoming') {
-			return new Date(a.start) - new Date(b.start);
-		}
-		if (type === 'ended') {
-			return new Date(a.end) - new Date(b.end);
-		}
-		// ongoing
-		if (a.end === null) return 1;
-		if (b.end === null) return -1;
-		return new Date(a.end) - new Date(b.end);
-	});
+	$: filteredData = $data.filter(
+		item => whereTypeMatches($time, type, item)
+	)
+	.sort(
+		(a, b) => byEarlierDate(type, a, b)
+	);
 </script>
 
-<h1 class:upcoming={type==='upcoming'} class:ongoing={type==='ongoing'} class:ended={type==='ended'}>
+<h1 class={type}>
 	<span>{typeNames[type]}</span>
 </h1>
 <section class="event-list">
 	{#each filteredData as item (item.id)}
-		<div animate:flip={{ duration: 500 }} in:recieve={{ key: item.id }} out:send={{ key: item.id }}>
+		<div
+			animate:flip={{ duration: 500 }}
+			in:recieve={{ key: item.id }}
+			out:send={{ key: item.id }}
+		>
 			<Event {item} {type} />
 		</div>
 	{/each}
@@ -62,7 +42,6 @@
 	h1 {
 		font-weight: 300;
 		background-color: rgba(255,255,255,.5);
-		/* background-image: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,0)); */
 		padding: 0 1.5rem .25rem;
 		margin: 0;
 

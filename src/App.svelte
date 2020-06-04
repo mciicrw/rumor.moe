@@ -1,6 +1,6 @@
 <script>
-	import EventList from './EventList.svelte';
-	import ServerTime from './ServerTime.svelte';
+	import EventList from './components/EventList.svelte';
+	import ServerTime from './components/ServerTime.svelte';
 </script>
 
 <header>
