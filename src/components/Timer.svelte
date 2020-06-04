@@ -16,7 +16,7 @@
 	let highestUnit = 'seconds';
 
 	$: remaining = new Date(target) - $time;
-	$: totalSeconds = Math.floor(remaining) / 1000;
+	$: totalSeconds = remaining / 1000;
 	$: days = Math.floor(totalSeconds / ONE_DAY);
 	$: hours = Math.floor(totalSeconds % ONE_DAY / ONE_HOUR);
 	$: minutes = Math.floor(totalSeconds % ONE_HOUR / ONE_MINUTE);

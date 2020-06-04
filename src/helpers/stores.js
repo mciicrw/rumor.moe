@@ -105,9 +105,12 @@ export const data = writable(
 );
 
 export const time = readable(new Date(), function start(set) {
-	const interval = setInterval(() => {
-		set(new Date());
-	}, 1000);
+	let interval;
+	setTimeout(() => {
+		interval = setInterval(() => {
+			set(new Date());
+		}, 1000);
+	}, 1000 - new Date().getMilliseconds());
 
 	return function stop() {
 		clearInterval(interval);
