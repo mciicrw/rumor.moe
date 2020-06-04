@@ -1,5 +1,6 @@
 <script>
 	import Event from './Event.svelte';
+	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
 	import { transition } from '../helpers/transition.js';
 	import { data, time } from '../helpers/stores.js';
@@ -36,6 +37,15 @@
 			<Event {item} {type} />
 		</div>
 	{/each}
+	{#if filteredData.length === 0}
+		<div
+			in:scale={{ delay: 500, duration: 500 }}
+			out:scale={{ duration: 250 }}
+			class="empty"
+		>
+			There are no events in this category.
+		</div>
+	{/if}
 </section>
 
 <style>
@@ -88,5 +98,14 @@
 
 	.event-list > div {
 		display: grid;
+	}
+
+	.empty {
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+		grid-column: 1 / -1;
+		padding: 2rem;
+		background-color: rgba(237, 242, 247, .5);
+
+		text-align: center;
 	}
 </style>
