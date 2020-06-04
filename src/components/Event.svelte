@@ -42,7 +42,6 @@
 	}
 	.title {
 		font-weight: 500;
-		background-color: rgba(237,242,247,.9);
 		padding: 2px 6px 2px 0;
 	}
 	.has-image .title {
