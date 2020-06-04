@@ -12,13 +12,13 @@ export function whereTypeMatches(currentTime, type, item) {
 
 	let itemType = 'upcoming';
 
-	if (currentTime > startDate) {
+	if (currentTime >= startDate) {
 		itemType = 'ongoing';
 	}
 
 	if (
 		item.end !== null &&
-		currentTime > endDate
+		currentTime >= endDate
 	) {
 		itemType = 'ended';
 	}

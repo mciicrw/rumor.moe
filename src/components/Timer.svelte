@@ -20,7 +20,7 @@
 	$: days = Math.floor(totalSeconds / ONE_DAY);
 	$: hours = Math.floor(totalSeconds % ONE_DAY / ONE_HOUR);
 	$: minutes = Math.floor(totalSeconds % ONE_HOUR / ONE_MINUTE);
-	$: seconds = Math.floor(totalSeconds % ONE_MINUTE);
+	$: seconds = Math.max(Math.floor(totalSeconds % ONE_MINUTE), 0);
 	$: {
 		if (seconds > 0) {
 			highestUnit = 'seconds';
@@ -67,14 +67,12 @@
 			{pluralize(minutes, 'minute')}
 		</div>
 	{/if}
-	{#if days > 0 || hours > 0 || minutes > 0 || seconds > 0}
-		<div class="value" class:important={highestUnit === 'seconds'}>
-			{seconds}
-		</div>
-		<div class="unit" class:important={highestUnit === 'seconds'}>
-			{pluralize(seconds, 'second')}
-		</div>
-	{/if}
+	<div class="value" class:important={highestUnit === 'seconds'}>
+		{seconds}
+	</div>
+	<div class="unit" class:important={highestUnit === 'seconds'}>
+		{pluralize(seconds, 'second')}
+	</div>
 </div>
 
 <style>
