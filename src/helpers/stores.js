@@ -10,11 +10,6 @@ const events = [
 		image: "/images/card_10174_s.png",
 	},
 	{
-		title: "June 02 Maintenance",
-		start: "02 June 2020 00:00:00 PDT",
-		end: "02 June 2020 02:00:00 PDT",
-	},
-	{
 		title: "Summer with Mikazuki Villa",
 		start: "02 June 2020 02:00:00 PDT",
 		end: "14 June 2020 23:59:59 PDT",
