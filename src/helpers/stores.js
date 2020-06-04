@@ -91,6 +91,7 @@ const events = [
 		start: "25 June 2020 02:00:00 PDT",
 		end: null,
 		image: "/images/card_10012_s.png",
+		theme: "dark",
 	},
 ];
 

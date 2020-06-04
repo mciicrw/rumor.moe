@@ -11,7 +11,7 @@
 	}
 </script>
 
-<div class="event" use:applyStyles class:has-image={item.image}>
+<div class="event" use:applyStyles class:has-image={item.image} class:dark={'dark' === item.theme}>
 	<div>
 		<span class="title">{item.title}</span>
 	</div>
@@ -33,6 +33,10 @@
 		padding: 1rem;
 		background-color: #EDF2F7;
 	}
+	.event.dark {
+		background-color: #4A5568;
+		color: #F7FAFC;
+	}
 	.event.has-image {
 		background-color: #F7FAFC;
 
@@ -40,11 +44,17 @@
 		background-position: right top;
 		background-size: contain;
 	}
+	.event.has-image.dark {
+		background-color: #2D3748;
+	}
 	.title {
 		font-weight: 500;
 		padding: 2px 6px 2px 0;
 	}
 	.has-image .title {
 		background-color: rgba(247,250,252,.9);
+	}
+	.has-image.dark .title {
+		background-color: rgba(45,55,72,.9);
 	}
 </style>
