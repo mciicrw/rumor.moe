@@ -13,12 +13,28 @@
 		return `${unit}s`;
 	}
 
+	let highestUnit = 'seconds';
+
 	$: remaining = new Date(target) - $time;
 	$: totalSeconds = Math.floor(remaining) / 1000;
 	$: days = Math.floor(totalSeconds / ONE_DAY);
 	$: hours = Math.floor(totalSeconds % ONE_DAY / ONE_HOUR);
 	$: minutes = Math.floor(totalSeconds % ONE_HOUR / ONE_MINUTE);
 	$: seconds = Math.floor(totalSeconds % ONE_MINUTE);
+	$: {
+		if (seconds > 0) {
+			highestUnit = 'seconds';
+		}
+		if (minutes > 0) {
+			highestUnit = 'minutes';
+		}
+		if (hours > 0) {
+			highestUnit = 'hours'
+		}
+		if (days > 0) {
+			highestUnit = 'days';
+		}
+	}
 </script>
 
 <div class="timer">
@@ -28,20 +44,36 @@
 		</div>
 	{/if}
 	{#if days > 0}
-		<div class="value">{days}</div>
-		<div class="unit">{pluralize(days, 'day')}</div>
+		<div class="value" class:important={highestUnit === 'days'}>
+			{days}
+		</div>
+		<div class="unit" class:important={highestUnit === 'days'}>
+			{pluralize(days, 'day')}
+		</div>
 	{/if}
 	{#if days > 0 || hours > 0}
-		<div class="value">{hours}</div>
-		<div class="unit">{pluralize(hours, 'hour')}</div>
+		<div class="value" class:important={highestUnit === 'hours'}>
+			{hours}
+		</div>
+		<div class="unit" class:important={highestUnit === 'hours'}>
+			{pluralize(hours, 'hour')}
+		</div>
 	{/if}
 	{#if days > 0 || hours > 0 || minutes > 0}
-		<div class="value">{minutes}</div>
-		<div class="unit">{pluralize(minutes, 'minute')}</div>
+		<div class="value" class:important={highestUnit === 'minutes'}>
+			{minutes}
+		</div>
+		<div class="unit" class:important={highestUnit === 'minutes'}>
+			{pluralize(minutes, 'minute')}
+		</div>
 	{/if}
 	{#if days > 0 || hours > 0 || minutes > 0 || seconds > 0}
-		<div class="value">{seconds}</div>
-		<div class="unit">{pluralize(seconds, 'second')}</div>
+		<div class="value" class:important={highestUnit === 'seconds'}>
+			{seconds}
+		</div>
+		<div class="unit" class:important={highestUnit === 'seconds'}>
+			{pluralize(seconds, 'second')}
+		</div>
 	{/if}
 </div>
 
@@ -56,8 +88,13 @@
 	}
 	.value {
 		text-align: right;
+		font-weight: 300;
 	}
 	.unit {
 		text-align: left;
+		font-weight: 300;
+	}
+	.important {
+		font-weight: 400;
 	}
 </style>
