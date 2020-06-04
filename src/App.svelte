@@ -21,7 +21,8 @@
 	}
 	h1 {
 		margin: 0;
-		font-weight: 400;
+		margin-top: 1rem;
+		font-weight: 300;
 		text-align: center;
 	}
 </style>

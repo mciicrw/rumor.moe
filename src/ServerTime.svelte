@@ -26,9 +26,11 @@
 
 <style>
 	div {
-		text-align: center;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 		background: rgba(255,255,255,.5);
 		margin: 1rem 0;
+		padding: .5rem 0 1rem;
+		text-align: center;
 	}
 	h1, h2, h4 {
 		font-weight: 400;

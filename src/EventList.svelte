@@ -47,7 +47,9 @@
 	});
 </script>
 
-<h1 class:upcoming={type==='upcoming'} class:ongoing={type==='ongoing'} class:ended={type==='ended'}>{typeNames[type]}</h1>
+<h1 class:upcoming={type==='upcoming'} class:ongoing={type==='ongoing'} class:ended={type==='ended'}>
+	<span>{typeNames[type]}</span>
+</h1>
 <section class="event-list">
 	{#each filteredData as item (item.id)}
 		<div animate:flip={{ duration: 500 }} in:recieve={{ key: item.id }} out:send={{ key: item.id }}>
@@ -60,17 +62,27 @@
 	h1 {
 		font-weight: 300;
 		background-color: rgba(255,255,255,.5);
+		/* background-image: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,0)); */
 		padding: 0 1.5rem .25rem;
 		margin: 0;
+
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	}
+	h1 > span {
+		display: block;
+		max-width: 1500px;
+		margin: 0 auto;
 	}
 	.event-list {
-		margin: 8px;
+		max-width: 1500px;
+
+		margin: 1rem auto 2rem;
+		padding: 0 .5rem;
 
 		display: grid;
 		grid-column-gap: .75em;
 		grid-row-gap: .75em;
-		align-items: start;
-		padding-bottom: 2em;
+		align-items: stretch;
 
 		grid-template-columns: 1fr;
 	}
@@ -96,7 +108,6 @@
 	}
 
 	.event-list > div {
-		align-self: stretch;
 		display: grid;
 	}
 </style>
