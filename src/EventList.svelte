@@ -41,9 +41,9 @@
 			return new Date(a.end) - new Date(b.end);
 		}
 		// ongoing
-		if (a.end === null) return -1;
-		if (b.end === null) return 1;
-		return 0;
+		if (a.end === null) return 1;
+		if (b.end === null) return -1;
+		return new Date(a.end) - new Date(b.end);
 	});
 </script>
 
