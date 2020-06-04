@@ -36,4 +36,7 @@
 		font-weight: 400;
 		margin: 0;
 	}
+	h1 {
+		font-variant-numeric: tabular-nums;
+	}
 </style>

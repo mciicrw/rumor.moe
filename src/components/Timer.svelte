@@ -89,6 +89,7 @@
 	.value {
 		text-align: right;
 		font-weight: 300;
+		font-variant-numeric: tabular-nums;
 	}
 	.unit {
 		text-align: left;
