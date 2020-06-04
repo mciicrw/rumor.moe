@@ -109,7 +109,7 @@ export const time = readable(new Date(), function start(set) {
 	setTimeout(() => {
 		interval = setInterval(() => {
 			set(new Date());
-		}, 1000);
+		}, 500);
 	}, 1000 - new Date().getMilliseconds());
 
 	return function stop() {
