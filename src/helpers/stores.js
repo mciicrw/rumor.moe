@@ -16,11 +16,6 @@ const events = [
 		image: "/images/card_11014_s.png",
 	},
 	{
-		title: "June 05 Maintenance",
-		start: "05 June 2020 00:00:00 PDT",
-		end: "05 June 2020 02:00:00 PDT",
-	},
-	{
 		title: "Sana's Doppel Challenge",
 		start: "05 June 2020 02:00:00 PDT",
 		end: null,
@@ -35,11 +30,11 @@ const events = [
 	{
 		title: "June 08 Maintenance",
 		start: "08 June 2020 00:00:00 PDT",
-		end: "08 June 2020 02:00:00 PDT",
+		end: "08 June 2020 01:00:00 PDT",
 	},
 	{
 		title: "Summer with Mikazuki Villa (Part 2)",
-		start: "08 June 2020 02:00:00 PDT",
+		start: "08 June 2020 01:00:00 PDT",
 		end: "14 June 2020 23:59:59 PDT",
 		image: "/images/card_11015_s.png",
 	},
