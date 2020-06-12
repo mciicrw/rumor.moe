@@ -16,21 +16,10 @@ const events = [
 		image: "/images/card_11014_s.png",
 	},
 	{
-		title: "Sana's Doppel Challenge",
-		start: "05 June 2020 02:00:00 PDT",
-		end: null,
-		image: "/images/card_10045_s.png",
-	},
-	{
 		title: "The Last Magia Campaign",
 		start: "05 June 2020 02:00:00 PDT",
 		end: "24 June 2020 23:59:59 PDT",
 		image: "/images/card_10025_s.png",
-	},
-	{
-		title: "June 08 Maintenance",
-		start: "08 June 2020 00:00:00 PDT",
-		end: "08 June 2020 02:00:00 PDT",
 	},
 	{
 		title: "Summer with Mikazuki Villa (Part 2)",
@@ -41,16 +30,34 @@ const events = [
 	{
 		title: "June 15 Maintenance",
 		start: "15 June 2020 00:00:00 PDT",
-		end: "15 June 2020 01:00:00 PDT",
+		end: "15 June 2020 02:00:00 PDT",
+	},
+	{
+		title: "Mitama's Special Training: Iroha",
+		start: "15 June 2020 02:00:00 PDT",
+		end: "18 June 2020 23:59:59 PDT",
+		image: "/images/card_10013_s.png",
+	},
+	{
+		title: "Iroha's Doppel Challenge",
+		start: "15 June 2020 02:00:00 PDT",
+		end: null,
+		image: "/images/card_10015_s.png",
+	},
+	{
+		title: "Touka Satomi Fate Weave",
+		start: "15 June 2020 02:00:00 PDT",
+		end: "24 June 2020 23:59:59 PDT",
+		image: "/images/card_10075_s.png",
 	},
 	{
 		title: "Last Magia Login Bonus",
-		start: "15 June 2020 01:00:00 PDT",
+		start: "15 June 2020 02:00:00 PDT",
 		end: "24 June 2020 23:59:59 PDT",
 	},
 	{
 		title: "Main Story Ch10 Ep 1-2",
-		start: "15 June 2020 01:00:00 PDT",
+		start: "15 June 2020 02:00:00 PDT",
 		end: null,
 		image: "/images/card_10055_s.png",
 	},
@@ -84,9 +91,20 @@ const events = [
 	{
 		title: "The Last Magia",
 		start: "25 June 2020 02:00:00 PDT",
-		end: null,
+		end: "28 June 2020 23:59:59 PDT",
 		image: "/images/card_10012_s.png",
 		theme: "dark",
+	},
+	{
+		title: "June 29 Maintenance",
+		start: "29 June 2020 00:00:00 PDT",
+		end: "29 June 2020 02:00:00 PDT",
+	},
+	{
+		title: "Another Story Chapter 10",
+		start: "29 June 2020 02:00:00 PDT",
+		end: null,
+		image: "/images/card_10074_s.png",
 	},
 ];
 
