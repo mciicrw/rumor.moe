@@ -10,27 +10,10 @@ const events = [
 		image: "/images/card_10174_s.png",
 	},
 	{
-		title: "Summer with Mikazuki Villa",
-		start: "02 June 2020 02:00:00 PDT",
-		end: "14 June 2020 23:59:59 PDT",
-		image: "/images/card_11014_s.png",
-	},
-	{
 		title: "The Last Magia Campaign",
 		start: "05 June 2020 02:00:00 PDT",
 		end: "24 June 2020 23:59:59 PDT",
 		image: "/images/card_10025_s.png",
-	},
-	{
-		title: "Summer with Mikazuki Villa (Part 2)",
-		start: "08 June 2020 02:00:00 PDT",
-		end: "14 June 2020 23:59:59 PDT",
-		image: "/images/card_11015_s.png",
-	},
-	{
-		title: "June 15 Maintenance",
-		start: "15 June 2020 00:00:00 PDT",
-		end: "15 June 2020 02:00:00 PDT",
 	},
 	{
 		title: "Mitama's Special Training: Iroha",
@@ -65,6 +48,12 @@ const events = [
 		title: "June 19 Maintenance",
 		start: "19 June 2020 00:00:00 PDT",
 		end: "19 June 2020 01:00:00 PDT",
+	},
+	{
+		title: "Nemu Hiiragi Fate Weave",
+		start: "19 June 2020 01:00:00 PDT",
+		end: "24 June 2020 23:59:59 PDT",
+		image: "/images/card_10075_s.png",
 	},
 	{
 		title: "Main Story Ch10 Ep 3",
