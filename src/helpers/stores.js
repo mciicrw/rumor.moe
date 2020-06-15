@@ -53,7 +53,7 @@ const events = [
 		title: "Nemu Hiiragi Fate Weave",
 		start: "19 June 2020 01:00:00 PDT",
 		end: "24 June 2020 23:59:59 PDT",
-		image: "/images/card_10075_s.png",
+		image: "/images/card_10145_s.png",
 	},
 	{
 		title: "Main Story Ch10 Ep 3",
