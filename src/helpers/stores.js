@@ -16,18 +16,6 @@ const events = [
 		image: "/images/card_10025_s.png",
 	},
 	{
-		title: "Mitama's Special Training: Iroha",
-		start: "15 June 2020 02:00:00 PDT",
-		end: "18 June 2020 23:59:59 PDT",
-		image: "/images/card_10013_s.png",
-	},
-	{
-		title: "Iroha's Doppel Challenge",
-		start: "15 June 2020 02:00:00 PDT",
-		end: null,
-		image: "/images/card_10015_s.png",
-	},
-	{
 		title: "Touka Satomi Fate Weave",
 		start: "15 June 2020 02:00:00 PDT",
 		end: "24 June 2020 23:59:59 PDT",
@@ -39,32 +27,10 @@ const events = [
 		end: "24 June 2020 23:59:59 PDT",
 	},
 	{
-		title: "Main Story Ch10 Ep 1-2",
-		start: "15 June 2020 02:00:00 PDT",
-		end: null,
-		image: "/images/card_10055_s.png",
-	},
-	{
-		title: "June 19 Maintenance",
-		start: "19 June 2020 00:00:00 PDT",
-		end: "19 June 2020 01:00:00 PDT",
-	},
-	{
 		title: "Nemu Hiiragi Fate Weave",
 		start: "19 June 2020 01:00:00 PDT",
 		end: "24 June 2020 23:59:59 PDT",
 		image: "/images/card_10145_s.png",
-	},
-	{
-		title: "Main Story Ch10 Ep 3",
-		start: "19 June 2020 01:00:00 PDT",
-		end: null,
-		image: "/images/card_10035_s.png",
-	},
-	{
-		title: "June 22 Maintenance",
-		start: "22 June 2020 00:00:00 PDT",
-		end: "22 June 2020 01:00:00 PDT",
 	},
 	{
 		title: "Main Story Ch10 Ep 4",
@@ -85,15 +51,56 @@ const events = [
 		theme: "dark",
 	},
 	{
+		title: "Ultimate Madoka Fate Weave",
+		start: "25 June 2020 02:00:00 PDT",
+		end: "28 June 2020 23:59:59 PDT",
+		image: "/images/card_21014_s.png",
+	},
+	{
+		title: "Daily Free 10x Premium Fate Weave",
+		start: "25 June 2020 02:00:00 PDT",
+		end: "04 July 2020 23:59:59 PDT",
+	},
+	{
+		title: "1 Year Anniversary Campaign",
+		start: "25 June 2020 02:00:00 PDT",
+		end: "06 July 2020 23:59:59 PDT",
+		theme: "dark",
+	},
+	{
 		title: "June 29 Maintenance",
 		start: "29 June 2020 00:00:00 PDT",
 		end: "29 June 2020 02:00:00 PDT",
+	},
+	{
+		title: "Main Story Ch10 Ep 5",
+		start: "29 June 2020 02:00:00 PDT",
+		end: null,
+		image: "/images/card_10144_s.png",
 	},
 	{
 		title: "Another Story Chapter 10",
 		start: "29 June 2020 02:00:00 PDT",
 		end: null,
 		image: "/images/card_10074_s.png",
+	},
+	{
+		title: "Ashley Taylor Doppel release",
+		start: "29 June 2020 02:00:00 PDT",
+		end: null,
+		image: "/images/card_30525_s.png",
+	},
+	{
+		title: "Ashley Taylor Fate Weave",
+		start: "29 June 2020 02:00:00 PDT",
+		end: "06 July 2020 23:59:59 PDT",
+		image: "/images/card_30524_s.png",
+	},
+	{
+		title: "1 Year Anniversary Login Bonus",
+		start: "29 June 2020 02:00:00 PDT",
+		end: "06 July 2020 23:59:59 PDT",
+		theme: "dark",
 	},
 ];
 
