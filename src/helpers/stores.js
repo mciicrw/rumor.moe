@@ -10,29 +10,6 @@ const events = [
 		image: "/images/card_10174_s.png",
 	},
 	{
-		title: "The Last Magia Campaign",
-		start: "05 June 2020 02:00:00 PDT",
-		end: "24 June 2020 23:59:59 PDT",
-		image: "/images/card_10025_s.png",
-	},
-	{
-		title: "Touka Satomi Fate Weave",
-		start: "15 June 2020 02:00:00 PDT",
-		end: "24 June 2020 23:59:59 PDT",
-		image: "/images/card_10075_s.png",
-	},
-	{
-		title: "Last Magia Login Bonus",
-		start: "15 June 2020 02:00:00 PDT",
-		end: "24 June 2020 23:59:59 PDT",
-	},
-	{
-		title: "Nemu Hiiragi Fate Weave",
-		start: "19 June 2020 01:00:00 PDT",
-		end: "24 June 2020 23:59:59 PDT",
-		image: "/images/card_10145_s.png",
-	},
-	{
 		title: "Main Story Ch10 Ep 4",
 		start: "22 June 2020 01:00:00 PDT",
 		end: null,
@@ -79,6 +56,12 @@ const events = [
 		image: "/images/card_10144_s.png",
 	},
 	{
+		title: "Cherry Blossom Dreams",
+		start: "29 June 2020 02:00:00 PDT",
+		end: "06 July 2020 23:59:59 PDT",
+		image: "/images/card_30435_s.png",
+	},
+	{
 		title: "Another Story Chapter 10",
 		start: "29 June 2020 02:00:00 PDT",
 		end: null,
@@ -101,6 +84,17 @@ const events = [
 		start: "29 June 2020 02:00:00 PDT",
 		end: "06 July 2020 23:59:59 PDT",
 		theme: "dark",
+	},
+	{
+		title: "July Shop",
+		start: "01 July 2020 00:00:00 PDT",
+		end: "31 July 2020 23:59:59 PDT",
+		image: "/images/card_10174_s.png",
+	},
+	{
+		title: "July 06 Maintenance",
+		start: "06 July 2020 00:00:00 PDT",
+		end: "06 July 2020 02:00:00 PDT",
 	},
 ];
 
