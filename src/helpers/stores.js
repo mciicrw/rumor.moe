@@ -92,9 +92,9 @@ const events = [
 		image: "/images/card_10174_s.png",
 	},
 	{
-		title: "July 06 Maintenance",
-		start: "06 July 2020 00:00:00 PDT",
-		end: "06 July 2020 02:00:00 PDT",
+		title: "July 07 Maintenance",
+		start: "07 July 2020 00:00:00 PDT",
+		end: "07 July 2020 02:00:00 PDT",
 	},
 ];
 
