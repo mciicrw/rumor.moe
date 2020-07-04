@@ -46,8 +46,8 @@ const events = [
 	},
 	{
 		title: "Aniplex Online Fest: Magia Record Panel",
-		start: "04 July 2020 12:00:00 PDT",
-		end: "04 July 2020 12:45:00 PDT",
+		start: "04 July 2020 12:15:00 PDT",
+		end: "04 July 2020 13:00:00 PDT",
 		image: "/images/aof_magireco.png",
 		theme: "dark",
 	},
