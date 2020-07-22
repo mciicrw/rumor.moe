@@ -38,6 +38,12 @@ const events = [
 		image: "/images/card_40264_s.png",
 	},
 	{
+		title: "Rebel of a Dawnless Land (Part 2)",
+		start: "28 July 2020 02:00:00 PDT",
+		end: "02 August 2020 23:59:59 PDT",
+		image: "/images/card_40265_s.png",
+	},
+	{
 		title: "Melissa Uncap",
 		start: "22 July 2020 02:00:00 PDT",
 		end: null,
