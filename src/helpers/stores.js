@@ -10,32 +10,21 @@ const events = [
 		image: "/images/card_10174_s.png",
 	},
 	{
-		title: "A Fledgling's First Flight",
-		start: "07 July 2020 03:00:00 PDT",
-		end: "14 July 2020 23:59:59 PDT",
-		image: "/images/card_10155_s.png",
-	},
-	{
-		title: "July 15 Maintenance",
-		start: "15 July 2020 00:00:00 PDT",
-		end: "15 July 2020 02:00:00 PDT",
-	},
-	{
-		title: "One Fleeting Summer Night",
-		start: "15 July 2020 03:00:00 PDT",
-		end: "21 July 2020 23:59:59 PDT",
-		image: "/images/card_11184_s.png",
-	},
-	{
-		title: "July 22 Maintenance",
-		start: "22 July 2020 00:00:00 PDT",
-		end: "22 July 2020 02:00:00 PDT",
-	},
-	{
 		title: "Rebel of a Dawnless Land",
 		start: "22 July 2020 02:00:00 PDT",
 		end: "02 August 2020 23:59:59 PDT",
 		image: "/images/card_40264_s.png",
+	},
+	{
+		title: "Melissa Uncap",
+		start: "22 July 2020 02:00:00 PDT",
+		end: null,
+		image: "/images/card_40235_s.png",
+	},
+	{
+		title: "July 28 Maintenance",
+		start: "28 July 2020 00:00:00 PDT",
+		end: "28 July 2020 02:00:00 PDT",
 	},
 	{
 		title: "Rebel of a Dawnless Land (Part 2)",
@@ -44,10 +33,19 @@ const events = [
 		image: "/images/card_40265_s.png",
 	},
 	{
-		title: "Melissa Uncap",
-		start: "22 July 2020 02:00:00 PDT",
-		end: null,
-		image: "/images/card_40235_s.png",
+		title: "400 Day Anniversary Set",
+		start: "28 July 2020 02:00:00 PDT",
+		end: "02 August 2020 23:59:59 PDT",
+	},
+	{
+		title: "Bonus Ticket Campaign",
+		start: "28 July 2020 02:00:00 PDT",
+		end: "02 August 2020 23:59:59 PDT",
+	},
+	{
+		title: "400 Day Anniversary Login Bonus",
+		start: "28 July 2020 02:00:00 PDT",
+		end: "11 August 2020 23:59:59 PDT",
 	},
 	{
 		title: "August Shop",
