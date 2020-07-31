@@ -22,11 +22,6 @@ const events = [
 		image: "/images/card_40235_s.png",
 	},
 	{
-		title: "July 28 Maintenance",
-		start: "28 July 2020 00:00:00 PDT",
-		end: "28 July 2020 02:00:00 PDT",
-	},
-	{
 		title: "Rebel of a Dawnless Land (Part 2)",
 		start: "28 July 2020 02:00:00 PDT",
 		end: "02 August 2020 23:59:59 PDT",
@@ -57,6 +52,17 @@ const events = [
 		title: "August 03 Maintenance",
 		start: "03 August 2020 00:00:00 PDT",
 		end: "03 August 2020 02:00:00 PDT",
+	},
+	{
+		title: "Summer Treasures",
+		start: "03 August 2020 02:00:00 PDT",
+		end: "11 August 2020 23:59:59 PDT",
+		image: "/images/card_26004_s.png",
+	},
+	{
+		title: "August 12 Maintenance",
+		start: "12 August 2020 00:00:00 PDT",
+		end: "12 August 2020 02:00:00 PDT",
 	},
 ];
 
