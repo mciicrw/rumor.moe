@@ -30,6 +30,17 @@ const events = [
 		start: "12 August 2020 00:00:00 PDT",
 		end: null,
 	},
+	{
+		title: "A New Beginning",
+		start: "12 August 2020 02:00:00 PDT",
+		end: "20 August 2020 23:59:59 PDT",
+		image: "/images/card_13014_s.png",
+	},
+	{
+		title: "August 21 Maintenance",
+		start: "21 August 2020 00:00:00 PDT",
+		end: "21 August 2020 02:00:00 PDT",
+	},
 ];
 
 let id = 0;
