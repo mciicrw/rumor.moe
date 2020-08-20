@@ -4,31 +4,10 @@ import { readable } from 'svelte/store';
 
 const events = [
 	{
-		title: "400 Day Anniversary Login Bonus",
-		start: "28 July 2020 02:00:00 PDT",
-		end: "11 August 2020 23:59:59 PDT",
-	},
-	{
 		title: "August Shop",
 		start: "01 August 2020 00:00:00 PDT",
 		end: "31 August 2020 23:59:59 PDT",
 		image: "/images/card_10174_s.png",
-	},
-	{
-		title: "Summer Treasures",
-		start: "03 August 2020 02:00:00 PDT",
-		end: "11 August 2020 23:59:59 PDT",
-		image: "/images/card_26004_s.png",
-	},
-	{
-		title: "August 12 Maintenance",
-		start: "12 August 2020 00:00:00 PDT",
-		end: "12 August 2020 02:00:00 PDT",
-	},
-	{
-		title: "Version 1.1.12 required",
-		start: "12 August 2020 00:00:00 PDT",
-		end: null,
 	},
 	{
 		title: "A New Beginning",
@@ -40,6 +19,29 @@ const events = [
 		title: "August 21 Maintenance",
 		start: "21 August 2020 00:00:00 PDT",
 		end: "21 August 2020 02:00:00 PDT",
+	},
+	{
+		title: "The Flowers' Lament",
+		start: "21 August 2020 02:00:00 PDT",
+		end: "30 August 2020 23:59:59 PDT",
+		image: "/images/card_30264_s.png",
+	},
+	{
+		title: "Sarasa Hanna Fate Weave",
+		start: "21 August 2020 02:00:00 PDT",
+		end: "30 August 2020 23:59:59 PDT",
+		image: "/images/card_30185_s.png",
+	},
+	{
+		title: "August 31 Maintenance",
+		start: "31 August 2020 00:00:00 PDT",
+		end: "31 August 2020 02:00:00 PDT",
+	},
+	{
+		title: "September Shop",
+		start: "01 September 2020 00:00:00 PDT",
+		end: "30 September 2020 23:59:59 PDT",
+		image: "/images/card_10174_s.png",
 	},
 ];
 
