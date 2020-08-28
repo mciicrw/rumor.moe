@@ -10,17 +10,6 @@ const events = [
 		image: "/images/card_10174_s.png",
 	},
 	{
-		title: "A New Beginning",
-		start: "12 August 2020 02:00:00 PDT",
-		end: "20 August 2020 23:59:59 PDT",
-		image: "/images/card_13014_s.png",
-	},
-	{
-		title: "August 21 Maintenance",
-		start: "21 August 2020 00:00:00 PDT",
-		end: "21 August 2020 02:00:00 PDT",
-	},
-	{
 		title: "The Flowers' Lament",
 		start: "21 August 2020 02:00:00 PDT",
 		end: "30 August 2020 23:59:59 PDT",
@@ -33,15 +22,53 @@ const events = [
 		image: "/images/card_30185_s.png",
 	},
 	{
+		title: "End of Magia Pass sales",
+		start: "30 August 2020 23:59:59 PDT",
+		end: null,
+	},
+	{
+		title: "All Event Stories Unlocked in Archive",
+		start: "31 August 2020 00:02:00 PDT",
+		end: null,
+	},
+	{
 		title: "August 31 Maintenance",
 		start: "31 August 2020 00:00:00 PDT",
 		end: "31 August 2020 02:00:00 PDT",
 	},
 	{
+		title: "Mitama Training: Iroha & Yachiyo",
+		start: "31 August 2020 02:00:00 PDT",
+		end: "10 September 2020 23:59:59 PDT",
+		image: "images/card_13015_s.png",
+	},
+	{
+		title: "End of All Magia Stone Sales",
+		start: "10 September 2020 23:59:59 PDT",
+		end: null,
+	},
+	{
+		title: "September 1 Maintenance",
+		start: "1 September 2020 00:00:00 PDT",
+		end: "1 September 2020 02:00:00 PDT",
+	},
+	{
+		title: "Final Mirrors Ranking",
+		start: "1 September 2020 02:00:00 PDT",
+		end: "17 September 2020 23:59:59 PDT",
+		image: "images/card_10425_s.png",
+	},
+	{
 		title: "September Shop",
 		start: "01 September 2020 00:00:00 PDT",
-		end: "30 September 2020 23:59:59 PDT",
+		end: "29 September 2020 23:59:59 PDT",
 		image: "/images/card_10174_s.png",
+	},
+	{
+		title: "End of Operations",
+		start: "29 September 2020 23:59:59 PDT",
+		end: null,
+		image: "images/kamihama.png",
 	},
 ];
 
