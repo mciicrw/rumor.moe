@@ -48,21 +48,21 @@ const events = [
 		end: null,
 	},
 	{
-		title: "September 1 Maintenance",
-		start: "1 September 2020 00:00:00 PDT",
-		end: "1 September 2020 02:00:00 PDT",
-	},
-	{
-		title: "Final Mirrors Ranking",
-		start: "1 September 2020 02:00:00 PDT",
-		end: "17 September 2020 23:59:59 PDT",
-		image: "images/card_10425_s.png",
-	},
-	{
 		title: "September Shop",
 		start: "01 September 2020 00:00:00 PDT",
 		end: "29 September 2020 23:59:59 PDT",
 		image: "/images/card_10174_s.png",
+	},
+	{
+		title: "September 11 Maintenance",
+		start: "11 September 2020 00:00:00 PDT",
+		end: "11 September 2020 02:00:00 PDT",
+	},
+	{
+		title: "Final Mirrors Ranking",
+		start: "11 September 2020 02:00:00 PDT",
+		end: "17 September 2020 23:59:59 PDT",
+		image: "images/card_10425_s.png",
 	},
 	{
 		title: "End of Operations",
